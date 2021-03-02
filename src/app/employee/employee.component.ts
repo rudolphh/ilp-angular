@@ -13,6 +13,8 @@ export class EmployeeComponent implements OnInit{
       employeeId: 1,
       firstName: "Rudy",
       lastName: "Hernandez",
+      birthDate: new Date(1982, 8, 27),
+      salary: 70000.00,
       dept: "ilp",
       city: "modesto",
       email: "rudyah@gmail.com"
@@ -21,6 +23,8 @@ export class EmployeeComponent implements OnInit{
       employeeId: 2,
       firstName: "Imogen",
       lastName: "Hernandez",
+      birthDate: new Date(2018, 7, 7),
+      salary: 0,
       dept: "baby",
       city: "modesto",
       email: "imogen@gmail.com"
@@ -29,6 +33,8 @@ export class EmployeeComponent implements OnInit{
       employeeId: 3,
       firstName: "Liliana",
       lastName: "Hernandez",
+      birthDate: new Date(2014, 6, 16),
+      salary: 0,
       dept: "ilp",
       city: "newman",
       email: "lily@gmail.com"
