@@ -11,7 +11,7 @@
     </thead>
 
     <tbody>
-        <tr *ngIf="employee.employeeId">
+        <tr rowColorOnMouseOver *ngFor="let employee of empList">
             <th scope="row" >{{employee.employeeId}}</th>
             <td>{{employee.firstName}}</td>
             <td>{{employee.lastName}}</td>
@@ -22,12 +22,3 @@
 
     </tbody>
 </table>
-
-<div><input type="text" [(ngModel)]="emp.firstName" /></div>
-<div><input type="text" [(ngModel)]="emp.lastName" /></div>
-<div><input type="text" [(ngModel)]="emp.dept" /></div>
-<div><input type="text" [(ngModel)]="emp.city" /></div>
-<div><input type="text" [(ngModel)]="emp.email" /></div>
-
-<div><button type="button" (click)="EditEmp()">Edit</button>
-<button type="button" (click)="UpdateEmp()">Update</button></div>
